@@ -8,7 +8,7 @@ The image is available on [Docker Hub](https://hub.docker.com/r/rvprasad/openjdk
 It does not include Open JDK source.  So, when you start a container based on 
 this image, make sure you mount a host folder as `/open-jdk` folder in the 
 container, e.g., 
-`docker run -i -t -v /tmp/open-jdk/:/open-jdk openjdk-devel /bin/bash`.
+`docker run -i -t -v /tmp/open-jdk/:/open-jdk rvprasad/openjdk-devel:v1 /bin/bash`.
 
 
 ## Build Instructions
@@ -32,5 +32,5 @@ make all
 ```
 
 
-## Tags
-- v1 has been tested to build jdk8u.
+## Status of various tags
+- _v1 is being tested to build jdk8u._
