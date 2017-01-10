@@ -2,9 +2,8 @@ FROM ubuntu:xenial
 
 Maintainer Venkatesh-Prasad Ranganath "http://github.com/rvprasad"
 
-COPY .bashrc_local /root/
-
-RUN apt-get update && \
+RUN echo ". /root/.bashrc_local" >> /root/.bashrc && \
+      apt-get update && \
       apt-get install -y software-properties-common && \
       add-apt-repository -y ppa:openjdk-r/ppa && \
       apt-get update && \
@@ -25,8 +24,9 @@ RUN apt-get update && \
         mercurial \
         openjdk-7-jdk \
         unzip \
-        zip && \
-     echo ". /root/.bashrc_local" >> /root/.bashrc
+        zip 
 
-
+ADD jtreg-4.2-b04.tar.gz /root/
+COPY .bashrc_local /root/
+    
 VOLUME ["/open-jdk"]

@@ -3,7 +3,7 @@
 The image is available on [Docker Hub](https://hub.docker.com/r/rvprasad/openjdk-devel/).
 
 
-## Image Usage
+## Usage
 
 It does not include Open JDK source.  So, when you start a container based on 
 this image, make sure you mount a host folder as `/open-jdk` folder in the 
@@ -11,7 +11,7 @@ container, e.g.,
 `docker run -i -t -v /tmp/open-jdk/:/open-jdk rvprasad/openjdk-devel:v1 /bin/bash`.
 
 
-## Build Instructions
+## OpenJDK Build Instructions
 
 In the container's shell, follow the instructions under bullet **2** under 
 **a Forest** in **Cloning** section of the [Repositories]
@@ -24,13 +24,17 @@ following commands in the container's shell.
 ```
 cd /open-jdk
 hg clone http://hg.openjdk.java.net/jdk8u/jdk8u  
+
 cd jdk8u
-bash ./configure \
-    --with-freetype-include=/usr/include/freetype2/ \
-    --with-freetype-lib=/usr/lib/x86_64-linux-gnu
+find . -exec touch '{}' \; # protection against possible clock skews
+bash ./configure --with-freetype-include=/usr/include/freetype2/ --with-freetype-lib=/usr/lib/x86_64-linux-gnu
 make all
+
+cd test
+make PRODUCT_HOME=/open-jdk/jdk8u/build/linux-x86_64-normal-server-release/images/j2sdk-image JT_HOME=$JT_HOME 
 ```
 
 
-## Status of various tags
-- _v1 is being tested to build jdk8u._
+## Status of Various Tags
+- _v1 has been used to successfully build jdk8u.  However, regression testing
+  has been elusive following the instructions provided by OpenJDK._
