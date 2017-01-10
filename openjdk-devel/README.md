@@ -38,6 +38,9 @@ cd ../hotspot/test
 jtreg -jdk:/open-jdk/jdk8u/build/linux-x86_64-normal-server-release/images/j2sdk-image -v1 :jdk
 ```
 
+If you want to execute regression tests in any repository, then look at the 
+entries in _TEST.groups_ files to provide as targets to `jtreg` command.
+
 
 ## Status of Various Tags
 - _v1 has been used to successfully build jdk8u.  However, regression testing
