@@ -32,6 +32,10 @@ make all
 
 cd test
 make PRODUCT_HOME=/open-jdk/jdk8u/build/linux-x86_64-normal-server-release/images/j2sdk-image JT_HOME=$JT_HOME 
+
+# to execute tests related to hotspot engine
+cd ../hotspot/test
+jtreg -jdk:/open-jdk/jdk8u/build/linux-x86_64-normal-server-release/images/j2sdk-image -v1 :jdk
 ```
 
 
