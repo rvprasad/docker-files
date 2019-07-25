@@ -4,7 +4,7 @@ The image is available on [Docker Hub](https://hub.docker.com/r/rvprasad/crystal
 
 ## Usage
 
-1. Checkout Crystal sources by executing `git clone https://github.com/crystal-lang/crystal.git` in $SRC folder on a x86 Ubuntu host system.
+1. Checkout Crystal sources by executing `git clone https://github.com/crystal-lang/crystal.git` in *$SRC* folder on a x86 Ubuntu host system.
 
 2. Install development packages required to cross-compile to arm-linux-gnueabihf target on the host system.
 
@@ -24,6 +24,6 @@ The image is available on [Docker Hub](https://hub.docker.com/r/rvprasad/crystal
    1. `cd /crystal`
    2. `mkdir .build`
    3. `make clean deps`
-   4. `cc crystal.o -o .build/crystal -rdynamic /crystal/src/llvm/ext/llvm_ext.o `/usr/bin/llvm-config-6.0 --libs --system-libs --ldflags 2> /dev/null` -lstdc++ -lpcre -lm -lgc -lpthread /crystal/src/ext/libcrystal.a -levent -lrt -ldl -L/usr/bin/../lib/crystal/lib -L/usr/lib -L/usr/local/lib`
+   4. ``cc crystal.o -o .build/crystal -rdynamic /crystal/src/llvm/ext/llvm_ext.o `/usr/bin/llvm-config-6.0 --libs --system-libs --ldflags 2> /dev/null` -lstdc++ -lpcre -lm -lgc -lpthread /crystal/src/ext/libcrystal.a -levent -lrt -ldl -L/usr/bin/../lib/crystal/lib -L/usr/lib -L/usr/local/lib``
 
 If all goes well, the crystal compiler for Raspberry Pi 3 (target: arm-linux-gnueabihf) will be available in */crystal/.build* folder in the container.
