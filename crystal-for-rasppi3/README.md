@@ -18,7 +18,7 @@ The image is available on [Docker Hub](https://hub.docker.com/r/rvprasad/crystal
 
 6. Make sure *qemu-user-static* package is installed on the host system.  This is required to execute an arm container on the host system.
 
-7. Start a container based on this image by executing `docker run -it -v $SRC/crystal/:/crystal rvprasad/crystal-for-rasppi3:v1 /bin/bash`.
+7. Start a container based on this image by executing `docker run -it -v $SRC/crystal/:/crystal rvprasad/crystal-for-rasppi3:v2 /bin/bash`.
 
 8. In a shell, execute
    1. `cd /crystal`
