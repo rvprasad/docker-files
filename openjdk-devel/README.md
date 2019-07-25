@@ -5,7 +5,7 @@ The image is available on [Docker Hub](https://hub.docker.com/r/rvprasad/openjdk
 
 ## Usage
 
-It does not include Open JDK source.  So, when you start a container based on 
+The image does not include Open JDK source.  So, when you start a container based on 
 this image, make sure you mount a host folder as `/open-jdk` folder in the 
 container, e.g., 
 `docker run -i -t -v /tmp/open-jdk/:/open-jdk rvprasad/openjdk-devel:v1 /bin/bash`.
