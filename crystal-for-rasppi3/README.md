@@ -1,4 +1,4 @@
-# Docker image to build Crystal language compiler for Raspberry Pi 3
+# Docker image to build [Crystal language](https://crystal-lang.org/) compiler for Raspberry Pi 3
 
 The image is available on [Docker Hub](https://hub.docker.com/r/rvprasad/crystal-for-rasppi3/).
 
