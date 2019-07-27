@@ -27,6 +27,6 @@ RUN echo ". /root/.bashrc_local" >> /root/.bashrc && \
         zip 
 
 ADD jtreg-4.2-b04.tar.gz /root/
-COPY .bashrc_local /root/
+COPY bashrc_local /root/.bashrc_local
     
 VOLUME ["/open-jdk"]
