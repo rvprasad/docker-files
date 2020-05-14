@@ -1,7 +1,5 @@
 # Docker image to build [Crystal language](https://crystal-lang.org/) compiler for Raspberry Pi 3
 
-The image is available on [Docker Hub](https://hub.docker.com/r/rvprasad/crystal-for-buster-armhf/).
-
 ## Usage
 
 1. Checkout Crystal sources by executing `git clone https://github.com/crystal-lang/crystal.git` in *$SRC* folder on a x86 Ubuntu host system.
@@ -16,7 +14,9 @@ The image is available on [Docker Hub](https://hub.docker.com/r/rvprasad/crystal
 
 4. Make sure *qemu-user-static* package is installed on the host system.  This is required to execute an arm container on the host system.
 
-5. Start a container based on this image by executing `docker run -it -v $SRC/crystal/:/crystal rvprasad/crystal-for-buster-armhf:v1 /bin/bash`.
+5. Build the docker image by executing `build.sh`.
+
+6. Start a container based on this image by executing `docker run -it -v $SRC/crystal/:/crystal crystal-for-buster-armhf:v1 /bin/bash`.
 
 6. In a shell, execute
    1. `cd /crystal`
