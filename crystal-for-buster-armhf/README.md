@@ -1,5 +1,7 @@
 # Docker image to build [Crystal language](https://crystal-lang.org/) compiler for Raspberry Pi 3
 
+**WARNING: These instructions are incomplete/non-functional.**
+
 ## Usage
 
 1. Checkout Crystal sources by executing `git clone https://github.com/crystal-lang/crystal.git` in *$SRC* folder on a x86 Ubuntu host system.
