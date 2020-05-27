@@ -1,6 +1,6 @@
 # Docker image to build [Crystal language](https://crystal-lang.org/) compiler for Raspberry Pi 3
 
-**WARNING: These instructions are incomplete/non-functional.**
+**WARNING: Currently, these instructions are non-functional on Raspberry Pi 3B.**
 
 ## Usage
 
