@@ -12,7 +12,7 @@
    1. `cd $SRC/crystal`
    2. `git checkout 0.34.0`
    3. `make clean deps`
-   4. `./bin/crystal build --cross-compile --target "arm-linux-gnueabihf" src/compiler/crystal.cr -D without_openssl -D without_zlib`.
+   4. `LLVM_CONFIG=/usr/bin/llvm-config-8 ./bin/crystal build --cross-compile --target "arm-linux-gnueabihf" src/compiler/crystal.cr -D without_openssl -D without_zlib`.
 
 4. Make sure *qemu-user-static* package is installed on the host system.  This is required to execute an arm container on the host system.
 
