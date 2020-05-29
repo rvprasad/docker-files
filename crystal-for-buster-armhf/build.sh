@@ -1,1 +1,1 @@
-docker build -t crystal-for-buster-armhf:v1 .
+docker build -t crystal-for-buster-armhf:v2 .

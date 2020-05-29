@@ -18,7 +18,7 @@
 
 5. Build the docker image by executing `build.sh`.
 
-6. Start a container based on this image by executing `docker run -it --rm -v $SRC/crystal/:/crystal crystal-for-buster-armhf:v1 /bin/bash`.
+6. Start a container based on this image by executing `docker run -it --rm -v $SRC/crystal/:/crystal crystal-for-buster-armhf:v2 /bin/bash`.
 
 6. In a shell, execute
    1. `cd /crystal`

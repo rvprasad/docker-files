@@ -1,4 +1,4 @@
-FROM debian:buster-backports@sha256:8f27850df2144df1598b5c76b213616ecaab08e804a6d84ddace1455d8cbd9f0
+FROM arm32v7/debian:buster-backports
 
 Maintainer Venkatesh-Prasad Ranganath "http://github.com/rvprasad"
 
