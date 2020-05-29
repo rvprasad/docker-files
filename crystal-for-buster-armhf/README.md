@@ -24,6 +24,6 @@
    1. `cd /crystal`
    2. `make clean deps`
    3. `mkdir .build`
-   4. ``cc crystal.o -o .build/crystal -rdynamic /crystal/src/llvm/ext/llvm_ext.o `/usr/bin/llvm-config-8 --libs --system-libs --ldflags 2> /dev/null` -lstdc++ -lpcre -lm -lgc -lpthread /crystal/src/ext/libcrystal.a -levent -lrt -ldl -L/crystal/src -L/usr/lib -L/usr/local/lib``
+   4. ``cc crystal.o -o .build/crystal -rdynamic /crystal/src/llvm/ext/llvm_ext.o `/usr/bin/llvm-config-8 --libs --system-libs --ldflags 2> /dev/null` -lstdc++ -lpcre -lm -lgc -lpthread /crystal/src/ext/libcrystal.a -levent -lrt -ldl``
 
 If all goes well, the crystal compiler for Raspberry Pi 3 (target: arm-linux-gnueabihf) will be available in */crystal/.build* folder in the container.
