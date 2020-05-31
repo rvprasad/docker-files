@@ -2,7 +2,7 @@
 Collection of Dockerfiles used to create Docker images.
 
 - [OpenJDK-Devel](openjdk-devel)
-- [Crystal-for-Rasppi3](crystal-for-buster-armhf)
+- [Crystal-for-buster-armhf](crystal-for-buster-armhf)
 
 
 ## Attribution
