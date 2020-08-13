@@ -14,8 +14,7 @@ container, e.g.,
 ## OpenJDK Build Instructions
 
 In the container's shell, follow the instructions under bullet **2** under 
-**a Forest** in **Cloning** section of the [Repositories]
-(http://openjdk.java.net/guide/repositories.html) document to clone the source
+**a Forest** in **Cloning** section of the [Repositories](http://openjdk.java.net/guide/repositories.html) document to clone the source
 repository of OpenJDK.  
 
 For example, to clone the source for OpenJDK 8u and build it, use the 
